@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input[type='text'],
+      input[type='number'] {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div style="height: 300px; width: 400px; border: solid">
+        <h3 style="background: red; margin: 0; text-align: center">
+          Yes! I want to subscribe to Mag-O-Zine
+        </h3>
+        <table>
+          <tr>
+            <th><input type="text" id="fname" /></th>
+            <th><input type="text" id="lname" /></th>
+          </tr>
+          <tr>
+            <td><label for="fname">First Name</label></td>
+            <td><label for="lname">Last Name</label></td>
+          </tr>
+        </table>
+        <label for="address">
+          <input
+            type="text"
+            id="address"
+            name="address"
+            style="width: 350px"
+          /><br />Address </label
+        ><br />
+
+        <table>
+          <tr>
+            <th><input type="text" id="city" style="width: 120px" /></th>
+            <th><input type="text" id="state" style="width: 120px" /></th>
+            <th>
+              <input id="pincode" style="width: 120px" type="number" />
+            </th>
+          </tr>
+          <tr>
+            <td><label for="city">City</label></td>
+            <td><label for="state">State</label></td>
+            <td><label for="pincode">PinCode</label></td>
+          </tr>
+        </table>
+        <div>
+          <label for="1year"
+            >Subscribe For: <input type="radio" id="1year" name="subscribe" />1
+            year ($19.95)
+          </label>
+          <label for="2year">
+            <input type="radio" id="2year" name="subscribe" />2 year ($35.00)
+          </label>
+        </div>
+        <div>
+          <p>Send me some information about</p>
+          <label for="computer">
+            <input
+              id="computer"
+              type="checkbox"
+              name="info"
+            />Computer_Zine </label
+          ><br />
+          <label for="fishing">
+            <input
+              id="fishing"
+              type="checkbox"
+              name="info"
+            />Fishing_Zine </label
+          ><br /><label for="cat">
+            <input id="cat" type="checkbox" name="info" />Cat_O_Zine </label
+          ><br />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
